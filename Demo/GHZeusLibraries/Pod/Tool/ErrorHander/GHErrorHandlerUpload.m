@@ -21,6 +21,8 @@ NSString *const ErrorInfoFileNameKey = @"LogFile";
 #define LogTxtInfosavePath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:ErrorInfoFileNameKey]
 #import "GHErrorHandlerUpload.h"
 
+
+
 @interface GHErrorHandlerUpload()
 @property (nonatomic,strong) GHViewModel  *viewModel;
 // 文件管理器
