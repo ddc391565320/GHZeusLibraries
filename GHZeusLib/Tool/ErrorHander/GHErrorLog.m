@@ -54,6 +54,7 @@ void signalHandler(int signal)
 
 void exceptionHandler(NSException *exception)
 {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     volatile int32_t _uncaughtExceptionCount = 0;
     int32_t exceptionCount = OSAtomicIncrement32(&_uncaughtExceptionCount);
     
@@ -66,17 +67,12 @@ void exceptionHandler(NSException *exception)
     [userInfo setObject:callStack forKey:ExceptionHandlerAddressesKey];
     
     
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject:userInfo forKey:@"ErrorDetailInfoKey"];
-    
     NSArray *callStack_ = [exception callStackSymbols];
     NSString *reason = [exception reason];
     NSString *name = [exception name];
     NSString *content = [NSString stringWithFormat:@"========异常错误报告========\nname:%@\nreason:\n%@\ncallStackSymbols:\n%@",name,reason,[callStack_ componentsJoinedByString:@"\n"]];
-    NSLog(@"%@",content);
-    
-    NSLog(@"Exception Invoked: %@", userInfo);
-
+  
+    [userDefaults setObject:content forKey:@"ErrorDetailInfoKey"];
 }
 
 void sendMail(NSString *errorInfo)

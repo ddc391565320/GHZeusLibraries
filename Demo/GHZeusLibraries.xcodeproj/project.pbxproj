@@ -97,7 +97,6 @@
 		CE028E6C1C9985BA00002F08 /* NSURL+GHExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GHExtend.m"; sourceTree = "<group>"; };
 		CE028E6E1C9985BA00002F08 /* GHClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHClassInfo.h; sourceTree = "<group>"; };
 		CE028E6F1C9985BA00002F08 /* GHClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHClassInfo.m; sourceTree = "<group>"; };
-		CE028E701C9985BA00002F08 /* GHDataModelObjType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDataModelObjType.h; sourceTree = "<group>"; };
 		CE028E711C9985BA00002F08 /* GHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHModel.h; sourceTree = "<group>"; };
 		CE028E721C9985BA00002F08 /* GHModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHModel.m; sourceTree = "<group>"; };
 		CE028E731C9985BA00002F08 /* GHParserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHParserModel.h; sourceTree = "<group>"; };
@@ -275,7 +274,6 @@
 			children = (
 				CE028E6E1C9985BA00002F08 /* GHClassInfo.h */,
 				CE028E6F1C9985BA00002F08 /* GHClassInfo.m */,
-				CE028E701C9985BA00002F08 /* GHDataModelObjType.h */,
 				CE028E711C9985BA00002F08 /* GHModel.h */,
 				CE028E721C9985BA00002F08 /* GHModel.m */,
 				CE028E731C9985BA00002F08 /* GHParserModel.h */,
