@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.homepage         = "http://www.classserver.cn/"
   s.license          = 'MIT'
   s.author           = { "张冠华" => "67131930@qq.com" }
-  s.source           = { :git => "https://git.oschina.net/LetMeCarzy/GHZeusLibraries.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ddc391565320/GHZeusLibraries.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
