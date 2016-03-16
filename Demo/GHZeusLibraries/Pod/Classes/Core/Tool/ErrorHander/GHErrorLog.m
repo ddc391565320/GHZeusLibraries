@@ -67,9 +67,6 @@ void exceptionHandler(NSException *exception)
     NSString *reason = [exception reason];
     NSString *name = [exception name];
     NSString *content = [NSString stringWithFormat:@"========异常错误报告========\nname:%@\nreason:\n%@\ncallStackSymbols:\n%@",name,reason,[callStack_ componentsJoinedByString:@"\n"]];
-    //    NSLog(@"%@",content);
-    
-    //    NSLog(@"Exception Invoked: %@", userInfo);
   
     [userDefaults setObject:content forKey:@"ErrorDetailInfoKey"];
 }
